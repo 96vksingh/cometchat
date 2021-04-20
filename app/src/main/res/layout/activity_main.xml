@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="213dp"
+                android:layout_height="182dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="98dp"
+                android:src="@drawable/imageedit12729072452" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvComet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivLogo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="163dp"
+                android:text="Secyor"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="248dp"
+                android:backgroundTint="@color/primaryTextColor"
+                android:padding="8dp"
+                android:text="Login using uid"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorWhite"
+                android:textSize="16sp"
+                app:rippleColor="@color/light_grey" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
