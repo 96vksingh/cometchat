@@ -7,6 +7,7 @@ import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,11 +28,19 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputEditText uid;
     private TextView title;
     private TextView des1,des2;
+    private String un;
+    private Button cont;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Intent intent = getIntent();
+        un = intent.getStringExtra("number");
+
+
+        Toast.makeText(LoginActivity.this, un, Toast.LENGTH_LONG).show();
         title = findViewById(R.id.tvTitle);
+        cont = findViewById(R.id.button2);
         des1 = findViewById(R.id.tvDes1);
         des2 = findViewById(R.id.tvDes2);
         uid = findViewById(R.id.etUID);
@@ -40,29 +49,58 @@ public class LoginActivity extends AppCompatActivity {
         uid.setOnEditorActionListener((textView, i, keyEvent) -> {
              if (i== EditorInfo.IME_ACTION_DONE){
                  if (uid.getText().toString().isEmpty()) {
-                     Toast.makeText(LoginActivity.this, "Fill Username field", Toast.LENGTH_LONG).show();
+                     Toast.makeText(LoginActivity.this, "Fill name", Toast.LENGTH_LONG).show();
                  }
-                 else {
-                     progressBar.setVisibility(View.VISIBLE);
-                     inputLayout.setEndIconVisible(false);
-                     login(uid.getText().toString());
-                 }
+//                 else {
+//                     progressBar.setVisibility(View.VISIBLE);
+//                     inputLayout.setEndIconVisible(false);
+//
+////                     login(uid.getText().toString());
+//                 }
              }
             return true;
         });
 
+        cont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Toast.makeText(LoginActivity.this, uid.getText().toString(), Toast.LENGTH_LONG).show();
+                Creates(uid.getText().toString());
+            }
+        });
+
         inputLayout.setEndIconOnClickListener(view -> {
             if (uid.getText().toString().isEmpty()) {
-                Toast.makeText(LoginActivity.this, "Fill Username field", Toast.LENGTH_LONG).show();
-            }
-            else {
-                findViewById(R.id.loginProgress).setVisibility(View.VISIBLE);
-                inputLayout.setEndIconVisible(false);
-                login(uid.getText().toString());
+                Toast.makeText(LoginActivity.this, "Fill name field", Toast.LENGTH_LONG).show();
             }
 
         });
         checkDarkMode();
+    }
+
+    private void Creates(String named) {
+
+
+        Toast.makeText(LoginActivity.this, un, Toast.LENGTH_LONG).show();
+
+        User user = new User();
+        user.setUid(un);
+        user.setName(named);
+        CometChat.createUser(user, AppConfig.AppDetails.AUTH_KEY, new CometChat.CallbackListener<User>() {
+            @Override
+            public void onSuccess(User user) {
+                Toast.makeText(LoginActivity.this, "i came", Toast.LENGTH_LONG).show();
+                login(un);
+            }
+
+            @Override
+            public void onError(CometChatException e) {
+                Toast.makeText(LoginActivity.this, "i did not come", Toast.LENGTH_LONG).show();
+//                createUserBtn.setClickable(true);
+//                Toast.makeText(CreateUserActivity.this,"Failed to create user",Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 
     private void checkDarkMode() {
@@ -106,8 +144,8 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void createUser(View view) {
-        startActivity(new Intent(LoginActivity.this,CreateUserActivity.class));
-    }
+//    public void createUser(View view) {
+//        startActivity(new Intent(LoginActivity.this,CreateUserActivity.class));
+//    }
 
 }

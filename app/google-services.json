@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "248464371996",
+    "firebase_url": "https://chat-app-23edd-default-rtdb.firebaseio.com",
+    "project_id": "chat-app-23edd",
+    "storage_bucket": "chat-app-23edd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248464371996:android:531c34eccf182747038ad9",
+        "android_client_info": {
+          "package_name": "com.cometchat.pro.androiduikit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248464371996-qr1fvb758uaet7g6pumo39n2q8ctt68s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw9iHerXbzBBHbxYcveyYkMwjJ5WxZPO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248464371996-qr1fvb758uaet7g6pumo39n2q8ctt68s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248464371996:android:db868793b914f464038ad9",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248464371996-qhfaci45m76duv6grg55dbb66p70rj3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whatsapp",
+            "certificate_hash": "205b0affd1bfd9313a4eda29aad7a79f80ebc753"
+          }
+        },
+        {
+          "client_id": "248464371996-qr1fvb758uaet7g6pumo39n2q8ctt68s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw9iHerXbzBBHbxYcveyYkMwjJ5WxZPO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248464371996-qr1fvb758uaet7g6pumo39n2q8ctt68s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248464371996:android:55e1568183eb1ab8038ad9",
+        "android_client_info": {
+          "package_name": "com.google.firebase.udacity.friendlychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248464371996-qr1fvb758uaet7g6pumo39n2q8ctt68s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw9iHerXbzBBHbxYcveyYkMwjJ5WxZPO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248464371996-qr1fvb758uaet7g6pumo39n2q8ctt68s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

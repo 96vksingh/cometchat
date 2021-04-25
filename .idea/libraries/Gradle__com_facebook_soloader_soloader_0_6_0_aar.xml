@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.soloader:soloader:0.6.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63485d62c79e8ef1f927ac7c7df87ee2/soloader-0.6.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63485d62c79e8ef1f927ac7c7df87ee2/soloader-0.6.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63485d62c79e8ef1f927ac7c7df87ee2/soloader-0.6.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32943f7807d347870dced6b26d31ed24/soloader-0.6.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32943f7807d347870dced6b26d31ed24/soloader-0.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32943f7807d347870dced6b26d31ed24/soloader-0.6.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.soloader/soloader/0.6.0/b4563b4595a606372d4bf917f406180e1a59099/soloader-0.6.0-javadoc.jar!/" />

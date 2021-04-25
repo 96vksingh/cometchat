@@ -6,26 +6,27 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="16dp"
-        android:layout_height="wrap_content">
 
-
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            tools:layout_editor_absoluteX="-90dp"
+            tools:layout_editor_absoluteY="-109dp">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivLogo"
                 android:layout_width="213dp"
                 android:layout_height="182dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="56dp"
-                android:layout_marginEnd="98dp"
-                android:src="@drawable/imageedit12729072452" />
+                android:src="@drawable/imageedit12729072452"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.565"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.092"
+                tools:ignore="MissingConstraints,UnknownId" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvComet"
@@ -33,32 +34,107 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivLogo"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="37dp"
-                android:layout_marginEnd="163dp"
                 android:text="Secyor"
                 android:textSize="32sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.38"
+                tools:ignore="MissingConstraints" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <EditText
+                android:id="@+id/otpd"
+                android:layout_width="291dp"
+                android:layout_height="54dp"
+
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="248dp"
+                android:layout_marginBottom="88dp"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/send"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+
+                android:hint="91"
+                android:inputType="number"
+                android:maxLength="2"
+                android:nextFocusLeft="@id/phnum"
+                android:nextFocusUp="@id/phnum"
+                android:nextFocusDown="@id/phnum"
+                android:nextFocusForward="@id/phnum"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.579"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/phnum"
+                android:layout_width="319dp"
+                android:layout_height="53dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:backgroundTint="@color/primaryTextColor"
+                android:inputType="phone"
                 android:padding="8dp"
-                android:text="Login using uid"
                 android:textAllCaps="true"
                 android:textColor="@color/textColorWhite"
                 android:textSize="16sp"
-                app:rippleColor="@color/light_grey" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.652"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.574"
+                app:rippleColor="@color/light_grey"
+                tools:ignore="MissingConstraints" />
 
-        </RelativeLayout>
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="36dp"
+                android:text="Send Otp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phnum"
+                tools:ignore="MissingConstraints" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:text="verify"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
