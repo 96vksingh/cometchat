@@ -10,29 +10,15 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+
             tools:layout_editor_absoluteX="-90dp"
             tools:layout_editor_absoluteY="-109dp">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/ivLogo"
-                android:layout_width="213dp"
-                android:layout_height="182dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/imageedit12729072452"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.565"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.092"
-                tools:ignore="MissingConstraints,UnknownId" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvComet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ivLogo"
+                android:layout_below="@id/imageView2"
                 android:layout_alignParentEnd="true"
                 android:text="Secyor"
                 android:textSize="32sp"
@@ -133,8 +119,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="127dp"
+                android:layout_height="185dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.141"
+                app:srcCompat="@drawable/secyor1_removebg_preview" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

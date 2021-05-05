@@ -18,6 +18,7 @@
     <string name="chats">Chats</string>
     <string name="groups">Groups</string>
     <string name="calls">Calls</string>
+    <string name="bots">Chatbot</string>
 
 
     <!--ComposeBox-->

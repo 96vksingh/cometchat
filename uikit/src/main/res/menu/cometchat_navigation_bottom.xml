@@ -25,4 +25,9 @@
       android:title="@string/more"
       android:id="@+id/menu_more"/>
 
+  <item
+      android:icon="@drawable/ic_more"
+      android:title="@string/bots"
+      android:id="@+id/bot"/>
+
 </menu>

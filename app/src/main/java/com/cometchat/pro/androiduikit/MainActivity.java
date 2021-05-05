@@ -225,7 +225,7 @@ private static final String KEY_VERIFY_IN_PROGRESS = "key_verify_in_progress";
             startActivity(new Intent(MainActivity.this,SelectActivity.class));
         }
 
-        ivLogo = findViewById(R.id.ivLogo);
+        ivLogo = findViewById(R.id.imageView2);
 
 
         if(Utils.isDarkMode(this)) {
